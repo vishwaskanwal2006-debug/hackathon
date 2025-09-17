@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-row: 3;
+    grid-column: 1;
+    grid-template-areas: "header,chats,bottom";
+
+ 
+}
+.header{
+display: flex;
+
+align-items: flex-start;
+flex-direction: row;
+padding: 2 px;
+margin: 2px;
+margin-right: 2px;
+
+}
+.tt{
+    padding: 5px;
+    margin: 1%;
+
+}
+/* From Uiverse.io by alexruix */ 
+/* The switch - the box around the slider */
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  --background: #28096b;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--background);
+  transition: .5s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 50%;
+  left: 10%;
+  bottom: 15%;
+  box-shadow: inset 8px -4px 0px 0px #fff000;
+  background: var(--background);
+  transition: .5s;
+}
+
+input:checked + .slider {
+  background-color: #522ba7;
+}
+
+input:checked + .slider:before {
+  transform: translateX(100%);
+  box-shadow: inset 15px -4px 0px 15px #fff000;
+}
+
+
+.search-container {
+    position: relative;
+}
+
+.search-input {
+    height: 50px;
+    border-radius: 30px;
+    padding-left: 35px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #888;
+}
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+.chatss{
+    
+    /* background-color: #522ba7; */
+    display: flex;
+    justify-content: baseline;
+    list-style-type:none;
+    flex-direction: column;
+    
+}
+.chats li{
+    width: 50%;
+    height: fit-content;
+    background-color: #888;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    font-weight: 400;
+    font-size: medium;
+    margin: 0.05rem;
+    
+}
+.chats li:hover{
+    border: 2px solid #1f1f1f;
+    
+
+}
+.chats {
+
+   height: 90vh;
+   
+}
+
+.loader:hover{
+    background-color: #888;
+    cursor:pointer;
+
+
+}
+.tt{
+    border-top: 1px solid #1f1f1f;
+    border-bottom: 1px solid #1f1f1f;
+
+}
+
+.tt h4:hover{
+    background-color: #e2d8d8;
+  transition: background-color 0.5s ease-out, transform 0.5s ease-out;
+   border-radius: 5px;
+
+
+}
+.tt h4{
+    padding: 2px;
+}
+.dropdown-menu li{
+    padding:2px;
+
+    
+}
+.dropdown-menu li:hover{
+    border: 1px solid #1f1f1f;
+    transition: border 0.5s ease-in,transform 0.5s ease-out;
+}
